@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 16px;
+  background-color: rgb(3, 172, 228);
+  color: #fff;
+}
+
+header>h3 { 
+  text-align: left;
+  grid-column-start: 1;
+}
+
+button {
+  background-color: rgb(81, 236, 19);
+  color: white
+}
+
+#input-bar {
+  background-color: navy;
+  color: white
+}
+
+body > div > main > section > div > form > button {
+  background-color: red;
+  color: white;
+}
+
+
+#menu {
+  text-align: right;
+  grid-column-start: 2;
+}
+
+
+#menu-grid {
+  display: grid;
+  /* grid-template-areas: 
+   'main-header' 'main-header' 'menu'; */
+   grid-template-columns: 20% 60% 40%;
+   grid-template-rows: 40px;
+}
+
+#top-picks {
+  display: grid;
+  grid-column: span;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#popular-destinations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px white;
+}
+
+.image {
+  flex: 33%
+}
